@@ -1,5 +1,10 @@
 # =: assignment, ==: comparison
- 
+#
+# Creating a variable that is a string.
+# Using type() to show that it is a string.
+# Really simple string formatting to substitute variables into a string.
+#
+#
 # day = "Saturday"
 # month = "October"
 # int = 10
