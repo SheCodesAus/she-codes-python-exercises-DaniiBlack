@@ -74,17 +74,17 @@
 #         return True
 # print(odd_or_even(-1))
 
-##################### Q3 ##################### 🍎
+##################### Q3 ##################### ✅
 # Write a function that returns the mean of a list of numbers
 #
-# Input: numbers [4, 3, 2, 6] 🍎
+# Input: numbers [4, 3, 2, 6] ✅
 # Output: 3.75
-def calculate_mean(arr):
-    count = 0
-    for count in calculate_mean:
-        count += 1
-    print(count)
-calculate_mean([4, 3, 2, 6])
+# def calculate_mean(arr):
+#     total = 0
+#     for count in arr:
+#         total += count / len(arr)
+#     return(total)
+# print(calculate_mean([4, 3, 2, 6]))
 
 # random_numbers = [-3, -5, 9, 1]
 # count = 0
@@ -92,21 +92,32 @@ calculate_mean([4, 3, 2, 6])
 #     count += 1
 # print(count)
 
-# Input: numbers [10, 5, 6] 🍎
+# Input: numbers [10, 5, 6] ✅
 # Output: 7.0
 
-##################### Q4 ##################### 🍎
-# Takes two params, the unit price of an item and how many unites were purchased 
+# print(calculate_mean([10, 5, 6]))
+
+##################### Q4 ##################### ✅
+# Takes two params, the unit price of an item and how many units were purchased 
 # return the total cost, as a string
 #
-# Input: price_per_unit 4.25 🍎
+# Input: price_per_unit 4.25 ✅
 # Input: num_units 3
 # Output: $12.75
+
+# def calc_price(cost, units):
+#     return((f"${cost * units}"))
+# (calc_price(4.25, 3))
+    # return(price-per-unit)
+    # return(number-of-units)
+    # return('total-cost')
 
 # Input: price_per_unit 3.79 🍎
 # Input: num_units 3
 # Output: $3.79
+# print(calc_price(3.79, 1))
 
 # Input: price_per_unit 1.49 🍎
 # Input: num_units 7
 # Output: $10.43
+# print(calc_price(1.49, 7))
