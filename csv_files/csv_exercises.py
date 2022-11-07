@@ -10,7 +10,7 @@ import csv
 # print(q_one.read())
 # q_one.close()
  
-################## Q2 ##################
+################## Q2 ################## ✅
 # Write a program that reads in colours_20_simple.csv
 # and outputs the colour data in order English, Hexthen (Hex) RGB.
 # Input: colours_20_simple.csv
@@ -18,6 +18,15 @@ import csv
 # q_two = open('colours_20_simple.csv', mode='r')
 # print(q_two.read())
 # q_two.close()
+
+# order: English, Hexthen RGB
+# q_two = open('colours_20_simple.csv', mode='r')
+# with open('colours_20_simple.csv') as file_object:
+#     print(file_object)
+# q_two.close()
+
+# q_two = colours_20_simple.csv("data.csv")
+# print(q_two)
 
 ################## Q3 ##################
 # Write a program that reads incolours_20.csvand output the colour data in order English, Hex then RGB

@@ -20,7 +20,7 @@
 # print(my_file_var.read())
 # If you want to read it multiple times, you'll have to add a command to set that behaviour
 # Alternatively, you can open, close, open again etc. 
-# Note. When you are working in these files in this way, there is a literal cursor banging abou tin the file.txt
+# Note. When you are working in these files in this way, there is a literal cursor banging about in the file.txt
 # the curser will only run once, as opposed to code, that can re-run.
 
 # with open('file.txt',mode='r') as my_file:
