@@ -105,14 +105,14 @@
 # Input: num_units 3
 # Output: $12.75
 
-# def calc_price(cost, units):
-#     return((f"${cost * units}"))
-# (calc_price(4.25, 3))
+def calc_price(cost, units):
+    return((f"${cost * units}"))
+(calc_price(4.25, 3))
     # return(price-per-unit)
     # return(number-of-units)
     # return('total-cost')
 
-# Input: price_per_unit 3.79 🍎
+# Input: price_per_unit 3.79 ✅
 # Input: num_units 3
 # Output: $3.79
 # print(calc_price(3.79, 1))
@@ -120,4 +120,4 @@
 # Input: price_per_unit 1.49 🍎
 # Input: num_units 7
 # Output: $10.43
-# print(calc_price(1.49, 7))
+print(calc_price(1.49, 7))
