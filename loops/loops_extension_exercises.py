@@ -1,4 +1,6 @@
 ################## LOOPS EXTENSION ##################
+# Note: also python has a built in alignment for strings. if you add :<20 to your f-string variable like this:
+# {groceries[items][0]:<20} will 
 
 ################## Q1 ##################
 # Below is a list of foods and their prices per unit:
