@@ -11,13 +11,13 @@ import csv
 # q_one.close()
  
 ################## Q2 ##################
-# Write aprogram that reads in colours_20_simple.csv
-# and outputs the colour data in order English,Hexthen RGB.
-# Input: colours_20.csv
-# Output: Contents of the colours_20_simple.csv file, in order of questions direction
-q_two = open('colours_20_simple.csv', mode='r')
-print(q_two.read())
-q_two.close()
+# Write a program that reads in colours_20_simple.csv
+# and outputs the colour data in order English, Hexthen (Hex) RGB.
+# Input: colours_20_simple.csv
+# Output: Contents of the colours_20_simple.csv file in order described above
+# q_two = open('colours_20_simple.csv', mode='r')
+# print(q_two.read())
+# q_two.close()
 
 ################## Q3 ##################
 # Write a program that reads incolours_20.csvand output the colour data in order English, Hex then RGB
