@@ -28,19 +28,36 @@ import csv
 # q_two = colours_20_simple.csv("data.csv")
 # print(q_two)
 
-################## Q3 ##################
+################## Q3 ################## ✅
 # Write a program that reads incolours_20.csvand output the colour data in order English, Hex then RGB
 # Input: colours_20.csv
 # Output: 
 
 ################## Q4 ##################
-# Using the same colour csv files, write a program that outputs the number of times each of the following colours appear in the English Name:
+# Using the same colour csv files, 
+# write a program that outputs the number of times each
+# of the following colours appear in the English Name:
+
 # Input: colours_20.csv
 # Output:
 # Red: 0
 # Green: 0
 # Blue: 0
 # Yellow: 12
+
+# def colour_finder(reader, colour):
+#     count = 0
+#     for line in reader:
+#         for word in line:
+#             if colour in word:
+#                 count += 1
+#     return(count)
+
+# with open("colours_20.csv") as csv_file:
+#     reader = csv.reader(csv_file)
+#     print(colour_finder(reader, "yellow"))
+
+
 
 
 # Input: colours_213.csv
@@ -50,6 +67,52 @@ import csv
 # Blue: 25
 # Yellow: 19
 
+
+def colour_finder(reader, colour):
+    for line in reader:
+        for word in line:
+            if colour in word:
+                print(True)
+            else:
+                print(False)
+            
+
+with open("colours_20.csv") as csv_file:
+    reader = csv.reader(csv_file)
+    colour_finder(reader, "yellow")
+
+
+    # q4 = open('colours_20.csv', mode='r')
+# print(q4.read())
+# q4.close()
+
+# def colour_finder(colour):
+#     for line in reader:
+#         for word in line:
+#             if colour in word:
+#                 return(True)
+#             else:
+#                 return(False)
+
+# with open("colours_20.csv") as csv_file:
+#     reader = csv.reader(csv_file)
+# print(reader.count("yellow"))
+
+
+
+
+import csv
+
+with open("colours_20.csv") as csv_file:
+    reader = csv.reader(csv_file)
+
+def colour_finder(colour):
+    count = 0
+    for line in reader:
+        for word in line:
+            if colour in word:
+                count += 1
+    return(count)
 
 
 ################## Q5 ##################
