@@ -36,26 +36,27 @@
 # print(f'Galaxy {} has the min velocity of {}')
 
 ######## This one works!! ########
-# import csv 
+#### For loop answer
+import csv 
 
-# with open("galaxies.csv") as csv_file:
-#     reader = csv.reader(csv_file)
-#     data = list(reader)
-    # count = 0
-    # galaxy_max = []
-    # galaxy_min = []
-    # for galaxy in data[1:]:
-    #     if count < int(galaxy[1]):
-    #         count = int(galaxy[1])
-    #         galaxy_max = galaxy
-    # for galaxy in data[1:]:
-    #     if count > int(galaxy[1]):
-    #         count = int(galaxy[1])
-    #         galaxy_min = galaxy
-    # print(f"Galaxy {galaxy_max[0]} has the max velocity of {galaxy_max[1]}km/sec.")
-    # print(f"Galaxy {galaxy_min[0]} has the min velocity of {galaxy_min[1]}km/sec.")
+with open("galaxies.csv") as csv_file:
+    reader = csv.reader(csv_file)
+    data = list(reader)
+    count = 0
+    galaxy_max = []
+    galaxy_min = []
+    for galaxy in data[1:]:
+        if count < int(galaxy[1]):
+            count = int(galaxy[1])
+            galaxy_max = galaxy
+    for galaxy in data[1:]:
+        if count > int(galaxy[1]):
+            count = int(galaxy[1])
+            galaxy_min = galaxy
+    print(f"Galaxy {galaxy_max[0]} has the max velocity of {galaxy_max[1]}km/sec.")
+    print(f"Galaxy {galaxy_min[0]} has the min velocity of {galaxy_min[1]}km/sec.")
 
-
+##### using .sort() answer 
 import csv 
 
 def get_velocity(galaxy):
